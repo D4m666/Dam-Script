@@ -1,7 +1,10 @@
 # Dam-Script
 Automated Monitoring Script
 
-To execute the script do the following commands inside the folder
+To install and execute the script do the following commands 
+
+  - 'git clone https://github.com/D4m666/Dam-Script'
+  - 'cd Dam-Script'
   - 'chmod +x setup.sh'
   - './setup.sh'
   - 'pip install -r requirements.txt'
