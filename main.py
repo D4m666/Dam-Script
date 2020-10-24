@@ -147,8 +147,8 @@ def bandwidth():
 		print("you need to start the server side in a machine") 
 		print("and the client side in a difrent machine!")
 		print("\n If you want to download one of the scripts needed to run this test")
-		print("use the comand 'git clone https://github.com/D4m666/Python-Scripts/BandWitdthServerSide.py'")
-		print("or 'git clone https://github.com/D4m666/Python-Scripts/BandWitdthClientSide.py' ")
+		print("use the comand 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthServerSide.py' for the server side")
+		print("or 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthClientSide.py' for client side ")
 		print("Press 'q' to go back to main menu...")
 		inp = raw_input("\n  --->  ")
 		if inp == 'q':
