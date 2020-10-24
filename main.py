@@ -6,10 +6,6 @@ from BandWidthServerSide import bwss
 from BandWidthClientSide import bwcs
 
 
-
-
-
-
 def template():
 	f = Figlet(font='epic')
 	g = Figlet(font='straight')
@@ -44,7 +40,6 @@ def iftop():
 	
 	main()
 	
-
 
 		
 def glanceMod():
@@ -101,7 +96,6 @@ def glanceMod():
 		print("  Invalid input..")
 		time.sleep(2)
 		glanceMod()	
-	
 	main()
 	
 
@@ -161,7 +155,6 @@ def bandwidth():
 		print("  Invalid input..")
 		time.sleep(2)
 		bandwidth()
-
 
 		
 		
