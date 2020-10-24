@@ -2,8 +2,8 @@ import os, sys, time, datetime
 from pyfiglet import Figlet
 from traceroute import trct
 from portscan import rhost
-from BandWithServerSide import bwss
-from BandWithClientSide import bwcs
+from BandWidthServerSide import bwss
+from BandWidthClientSide import bwcs
 
 
 
