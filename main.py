@@ -103,9 +103,31 @@ def glanceMod():
 
 def tracer():
 	template()
-	print("\n   ---Tracerouter---\n")
-	trct()
-	main()
+	print("\n   --- Traceroute ---")
+	print('\n     Chose one option ')
+	print("\n  [1] Launch Traceroute\n  [2] Back to Menu")
+	inp = input("\n  --->  ")
+	if inp == 1:
+		template()
+		print("\n   --- Traceroute ---")
+		print("")
+		trct()
+		print("\nPress 't' to lauch Traceroute again, and 'q' to go back to main menu...")
+		inp = raw_input("\n  --->  ")
+		
+		if inp == 'q':
+			main()
+			
+		elif inp == 't':
+			tracer()
+			
+	if inp == 2:
+		main()
+		
+	else:
+		print("  Invalid input..")
+		time.sleep(2)
+		tracer()
 	
 
 
@@ -113,7 +135,49 @@ def tracer():
 def PortScanner():
 	template()
 	print("\n   ---Port Scanner---")
-	rhost()
+	print("\n    Chose one options")
+	print("\n  [1] Launch Port Scanner\n  [2] Back to Menu")
+	inp = input("\n  --->  ")
+	
+	if inp == 1:
+		template()
+		print("\n   ---Port Scanner---")
+		rhost()
+		print("\nPress 't' to lauch Scanner again, and 'q' to go back to main menu...")
+		inp = raw_input("\n  --->  ")
+		
+		if inp == 'q':
+			main()
+			
+		elif inp == 't':
+			template()
+			print("\n   --- Port Scanner ---")
+			trct()
+			print("\nPress 't' to lauch Scanner again, and 'q' to go back to main menu...")
+			inp = raw_input("\n  --->  ")
+		
+	if inp == 2:
+		main()
+		
+	else:
+		print("  Invalid input..")
+		time.sleep(2)
+		PortScanner()
+
+
+
+def Credits():
+	template()
+	print("The creatr of Dam Script is not reponsible for any of your activities while using the script!")
+	print("This Script is meant to help you monitor your machine and keep track of any problems it might have.")
+	print("\n  Press 'q' to go back to main menu...")
+	inp = raw_input("\n  --->  ")
+	if inp == 'q':
+		main()
+	else:
+		print("  Invalid input..")
+		time.sleep(2)
+		Credits()
 
 
 
@@ -135,18 +199,25 @@ def bandwidth():
 		bwcs()
 		
 	if inp == 3:
-		template()
-		print("\n   ---Bandwidth Test---")
-		print("\n In order for you test the Bandwidth") 
-		print("you need to start the server side in a machine") 
-		print("and the client side in a difrent machine!")
-		print("\n If you want to download one of the scripts needed to run this test")
-		print("use the comand 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthServerSide.py' for the server side")
-		print("or 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthClientSide.py' for client side ")
-		print("Press 'q' to go back to main menu...")
-		inp = raw_input("\n  --->  ")
-		if inp == 'q':
-			bandwidth()
+		def bandwidthHelp():
+			template()
+			print("\n   ---Bandwidth Test---")
+			print("\n In order for you test the Bandwidth") 
+			print("you need to start the server side in a machine") 
+			print("and the client side in a difrent machine!")
+			print("\n If you want to download one of the scripts needed to run this test")
+			print("use the comand 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthServerSide.py' for the server side")
+			print("or 'wget https://raw.githubusercontent.com/D4m666/Dam-Script/main/BandWidthClientSide.py' for client side ")
+			print("Press 'q' to go back to main menu...")
+			inp = raw_input("\n  --->  ")
+			if inp == 'q':
+				bandwidth()
+			
+			else:
+				print("  Invalid input..")
+				time.sleep(2)
+				bandwidthHelp()
+		bandwidthHelp()
 	
 	if inp == 4:
 		main()
@@ -185,17 +256,10 @@ def main():
 	
 	elif question == 5:
 		bandwidth()
+		
 	
 	elif question == 6:
-		os.system('clear')
-		print("  Coded by D4m3  ")
-		print("")
-		print("The creatr of Dam Script is not reponsible for any of your activities while using the script!")
-		print("This Script is meant to help you monitor your machine and keep track of any problems it might have.")
-		print("  Press 'q' to go back to main menu...")
-		inp = raw_input("\n  --->  ")
-		if inp == 'q':
-			main()
+		Credits()
         
 	elif question == 7:
 		print("  Closing..")
