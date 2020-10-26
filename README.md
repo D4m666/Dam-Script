@@ -7,7 +7,6 @@ To install and execute the script do the following commands
   - 'cd Dam-Script'
   - 'chmod +x setup.sh'
   - './setup.sh'
-  - 'pip install -r requirements.txt'
   - 'python main.py
 
 
