@@ -59,7 +59,6 @@ def trct():
         ttl += 1
         if curr_addr == dest_addr or ttl > max_hops:
             break
-		
-		
+			
 
 
